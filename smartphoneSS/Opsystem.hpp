@@ -17,7 +17,17 @@ public:
         version = verzija;
     }
     
+    OS getType() const {
+        return type;
+    }
+    int getVersion() const {
+        return version;
+    }
+    
+    void setVersion(int verzija){
+        version = verzija;
+    }
+    
 };
-
 
 #endif // OPSYSTEM_H_INCLUDED
