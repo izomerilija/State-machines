@@ -16,7 +16,7 @@ void printSmartphone(Smartphone sp){
     cout << "  Operativni sistem: " << sp.system.getType() << endl;
     cout << "  Verzija operativnog sistema: "<< sp.getVersion() << endl;
     cout << "  Stanje: ";
-    switch (sp.getMonitorState()){
+    switch (sp.getPhoneState()){
         case sON:
             cout << "UKLJUCEN";
             break;
