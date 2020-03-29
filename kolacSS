@@ -1,1 +1,89 @@
+#include <iostream>
+
+using namespace std;
+
+#define KRAJ_PROGRAMA 
+#define MAX_TEMP 100
+
+enum TipPreliva{COKOLADNI, COKOLADNI_SA_SLAGOM};
+enum KolacStanje{U_PRIPREMI, PECE_SE, ZAGOREO, PRIPREMNJEN};
+
+class Preliv{
+private:
+    TipPreliva tip;
+public:
+    Preliv(TipPreliva type = COKOLADNI){
+        type = tip;
+    }
+
+    TipPreliva getTip() const{
+        return tip;
+    }
+
+    bool dodajSlag(){
+        if(tip = COKOLADNI){
+            tip = COKOLADNI_SA_SLAGOM;
+            return true;
+        }
+        return false;
+    }
+    bool ukloniSlag(){
+        if(tip = COKOLADNI_SA_SLAGOM){
+            tip = COKOLADNI;
+            return true;
+        }
+        return false;
+    }
+
+};
+
+void ispisiPreliv(const Preliv&){
+    cout << "  ------------------" << endl;
+    cout << "  Preliv: ";
+    if(Preliv.tip == COKOLADNI){  //?
+        cout << "Cokoladni." << endl;
+    }else{
+        cout << "Cokoladni sa prelivom." << endl;
+    }
+    cout << "  ------------------" << endl;
+
+}
+
+
+int meni(){
+    cout << endl;
+    cout << "  -----------------------------------------" << endl;
+    cout << "  Izaberite  operaciju:                    " <<endl << endl;
+    
+    cout << "  11. Zavrsi program." << endl;
+    cout << "  > ";
+    int n;
+    cin >> n;
+    cout << endl << endl;
+    return n;
+}
+
+int main()
+{
+    Preliv = p;
+    Kolac = k;
+
+    int n;
+    do {
+        n = meni();
+        switch (n)
+        {
+            case :
+                cout << "  KRAJ PROGRAMA";
+                break;
+
+            default: cout << "  Nepostojeca operacija." << endl;
+        }
+        ispisiPreliv(p);
+        ispisiKolac(k);
+
+    } while (n != KRAJ_PROGRAMA);
+    return 0;
+}
+
 
