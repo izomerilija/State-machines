@@ -49,6 +49,64 @@ void ispisiPreliv(const Preliv&){
 
 }
 
+class Kolac{
+private:
+    KolacStanje stanje;
+    int temperatura;
+    Preliv preliv;
+public:
+    Kolac(){
+        stanje = U_PRIPREMI;
+        temperatura = 20;
+        preliv = COKOLADNI;
+    }
+    Kolac(const Kolac &k){
+        stanje = k.stanje;
+        temperatura = k.temperatura;
+        preliv = k.preliv;
+    }
+    
+    KolacStanje getStanje(){
+        return stanje;
+    }
+    int getTemp(){
+        return temperatura;
+    }
+    Preliv getTipPreliva(){
+        return tip;
+    }
+    
+    bool staviDaSePece(){
+    
+    }
+    bool ispeciKolac(){
+    
+    }
+    bool zavrsiKolac(){
+    
+    }
+    bool povecajTemperaturu(){
+    
+    }
+    bool smanjiTemperaturu(){
+    
+    }
+    bool dodajSlag(){
+    
+    }
+    bool ukloniSlag(){
+    
+    }
+
+    
+};
+
+ispisiKolac(const Kolac&){
+    cout << "  ------------------" << endl;
+    
+    cout << "  ------------------" << endl;
+}
+
 
 int meni(){
     cout << endl;
