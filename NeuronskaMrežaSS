@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+
+enum tipMreze{DUBOKA, OBICNA};
+enum tipOptimizacije{};
+enum StanjeTesta{};
+
+class NeuronskaMreza{
+private:
+    int brSkrivenihSlojeva;
+    int brNeuronaPoSloju;
+public:
+    
+};
+
+class Test{
+private:
+    NeuronskaMreza nm;
+    double zeljeniProcenatUspesnosti;
+    int brOptimizacija;
+    StanjeTesta stanje;
+public:
+    
+};
+
+void ispisiTest(const Test&){
+
+}
+
+
+int meni(){
+    cout << endl;
+    cout << "  -----------------------------------------" << endl;
+    cout << "  Izaberite  operaciju:                    " <<endl << endl;
+    
+    cout << "  > ";
+    int n;
+    cin >> n;
+    cout << endl << endl;
+    return n;
+}
+
+int main()
+{
+    NeuronskaMreza = nm;
+    Test = t;
+    int n;
+    
+    return 0;
+}
